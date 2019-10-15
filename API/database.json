@@ -1,0 +1,85 @@
+{
+  "tacos": [
+    {
+      "id": 1,
+      "name": "Chicken Taco",
+      "type": "chicken"
+    },
+    {
+      "id": 2,
+      "name": "Beef Taco",
+      "type": "beef"
+    },
+    {
+      "id": 3,
+      "name": "Veggie Taco",
+      "type": "veggie"
+    },
+    {
+      "id": 4,
+      "name": "Chicken Burrito",
+      "type": "chicken"
+    },
+    {
+      "id": 5,
+      "name": "Beef Burrito",
+      "type": "burrito"
+    },
+    {
+      "id": 6,
+      "name": "Veggie Burrito",
+      "type": "burrito"
+    }
+  ],
+  "users": [
+    {
+      "email": "lauren@lauren.com",
+      "password": "lauren",
+      "id": 1
+    },
+    {
+      "email": "heidi@heidi.com",
+      "password": "heidi",
+      "id": 2
+    },
+    {
+      "email": "mark@mark.com",
+      "password": "mark",
+      "id": 3
+    },
+    {
+      "email": "heidi@heidi",
+      "password": "heidi",
+      "id": 4
+    },
+    {
+      "email": "heidi@heidi",
+      "password": "hehe",
+      "id": 5
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "tacoId": 1,
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "tacoId": 2,
+      "userId": 2
+    },
+    {
+      "id": 3,
+      "tacoId": 3,
+      "userId": 3
+    }
+  ],
+  "favorites": [
+    {
+      "id": "",
+      "userId": "",
+      "tacoId": ""
+    }
+  ]
+}
