@@ -4,7 +4,7 @@ import { Component } from 'react'
 class Navbar extends Component {
     render() {
         return (
-<h1>This is NavBar</h1>
+<h1>NavBar: Taco Shop</h1>
         )
     }
 }

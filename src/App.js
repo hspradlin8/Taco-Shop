@@ -7,7 +7,8 @@ import './App.css';
 class App extends Component {
   // construstor- first thing that happens
   state = {
-    user: sessionStorage.getItem("credentials") !== null
+    user: sessionStorage.getItem("credentials") !== null,
+    userId: sessionStorage.getItem("credentials") ? JSON.parse(sessionStorage.getItem("credentials"))[0].id : false
   }
 
   // Check if credentials are in local storage --returns true/false
@@ -21,7 +22,8 @@ class App extends Component {
       JSON.stringify(authObj)
     )
     this.setState({
-      user: this.isAuthenticated()
+      user: this.isAuthenticated(),
+      userId: authObj.id
     });
   }
   clearUser = () => {
@@ -43,9 +45,8 @@ class App extends Component {
       <>
         {this.state.user ? (
           <>
-            <AppplicationViews user={this.state.user}
-              setUser={this.setUser} />
-            <NavBar user={this.state.user} clearUser={this.clearUser} />
+            <NavBar />
+            <AppplicationViews userId={this.state.userId} />
           </>
         ) : (
             <Login  setUser={this.setUser}/>

@@ -29,6 +29,22 @@
       "id": 6,
       "name": "Veggie Burrito",
       "type": "burrito"
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "userId": 4,
+      "tacoId": 1,
+      "id": 9
+    },
+    {
+      "userId": 4,
+      "tacoId": 1,
+      "id": 10
     }
   ],
   "users": [
@@ -56,6 +72,11 @@
       "email": "heidi@heidi",
       "password": "hehe",
       "id": 5
+    },
+    {
+      "email": "mo@momomomo",
+      "password": "momomom",
+      "id": 6
     }
   ],
   "orders": [
